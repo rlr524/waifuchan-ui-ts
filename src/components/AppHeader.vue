@@ -10,20 +10,7 @@
         >Waifuchan</span
       >
     </div>
-    <div class="flex sm:w-1/2">
-      <form action="" class="md:w-full">
-        <div class="">
-          <input
-            type="text"
-            name=""
-            id=""
-            placeholder="Search"
-            aria-label="Search"
-            class="h-8 md:w-full"
-          />
-        </div>
-      </form>
-    </div>
+    <search-box />
     <div class="flex w-1/3 mr-4">
       <div
         class="header-links text-white text-xl sm:flex-grow sm:flex sm:justify-end hidden"
@@ -60,6 +47,8 @@
 </template>
 
 <script setup lang="ts">
+import SearchBox from "@/components/SearchBox.vue";
+
 var loggedIn = true;
 
 function logout() {
