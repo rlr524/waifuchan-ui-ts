@@ -1,3 +1,13 @@
+<script setup lang="ts">
+import SearchBox from "@/components/SearchBox.vue";
+
+var loggedIn = true;
+
+function logout() {
+  console.log("Logging out...");
+}
+</script>
+
 <template>
   <nav id="nav" class="header flex mb-4 items-center h-32 -bg-color-main">
     <div class="flex items-center w-1/3">
@@ -45,16 +55,6 @@
     </div>
   </nav>
 </template>
-
-<script setup lang="ts">
-import SearchBox from "@/components/SearchBox.vue";
-
-var loggedIn = true;
-
-function logout() {
-  console.log("Logging out...");
-}
-</script>
 
 <style scoped>
 .material-icons.md-light {

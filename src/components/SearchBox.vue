@@ -11,8 +11,8 @@ interface AppInfo {
 const searchInput = ref("");
 const results = ref(0);
 const appInfo: AppInfo = reactive({
-  name: "SearchBox",
-  description: "This is an example of the script setup syntax",
+  name: "",
+  description: "",
 });
 
 results.value = searchApi.getResultCount(searchInput.value);
